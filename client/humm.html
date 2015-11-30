@@ -18,11 +18,12 @@
     <h1> This is an example of Implicit Grant Flow </h1>
 
     {{#if loggedViaImplicit}}
-        <h2> Me </h2>
+        <h3>Logged in as {{meViaImplicit.account.email}}</h3>
         <img src="{{meViaImplicit.account.uavatar}}">
         <p>{{meViaImplicit.account.uname}}</p>
         <p>{{meViaImplicit.account.email}}</p>
         <p>{{meViaImplicit.account.bio}}</p>
+
     {{else}}
         <button id="login-via-implicit-grant"> Log in using Humm</button>
     {{/if}}
