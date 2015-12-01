@@ -10,7 +10,7 @@ These examples cover:
 
 ## Installation
 
-This an exmaple meteor project,[Get started with Meteor](https://www.meteor.com/install) you can find instructions on how to install it. 
+This an exmaple meteor project, [Get started with Meteor](https://www.meteor.com/install) you can find instructions on how to install it and get started. 
 
 ## Running the examples
 
