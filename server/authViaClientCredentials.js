@@ -1,3 +1,5 @@
+//console.log(humm);
+
 humm.init({
     client_id: '56570bacae8c5087411778a3',
     client_secret: 'CdNX3TcLc/OF3k2oIogwlBi/rCZOP0LSfLxrRjoX5EA='
@@ -18,3 +20,6 @@ humm.authViaClientCredentials(function(err, res){
     //make authorised calls here....
 
 });
+
+
+humm.authViaClientCredentials('hey', 'yooo');
