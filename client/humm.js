@@ -27,7 +27,7 @@ Template.humm.helpers({
 });
 
 Template.humm.events({
-    'click #login-via-auth-code': function loginViaCode(){
+    'click #login-via-auth-code': function loginViaCode(event, template){
         console.log('------------------- Starting Auth via auth code follow ------------------- ');
         console.log(humm);
 
@@ -44,9 +44,10 @@ Template.humm.events({
             Meteor.call('getMe', response.code, function(err, res) {
                 console.log(err);
                 console.log(res);
+                template.loggedViaCode.set(true);
+                template.meViaCode = res.data.data_response;
             })
         });
-
     },
 
     'click #login-via-implicit-grant': function loginViaImplicitGrant(event, template){
@@ -71,6 +72,14 @@ Template.humm.events({
                 template.meViaImplicit = response.data_response;
             });
         });
+
+    },
+
+    'click #login-via-client-cred': function authViaClientCredentials() {
+        Meteor.call('getSongById', '557ecbf86a64fc1b8bed533f', function(err, res) {
+            console.log(err);
+            console.log(res);
+        })
 
     }
 });

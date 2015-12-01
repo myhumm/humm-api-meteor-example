@@ -4,8 +4,7 @@
 
     {{#if loggedViaCode}}
         <h2> Me </h2>
-        {{meViaCode}}
-        <h2> Me </h2>
+        <h3>Logged in as {{ meViaCode.account.email }}</h3>
         <img src="{{meViaCode.account.uavatar}}">
         <p>{{meViaCode.account.uname}}</p>
         <p>{{meViaCode.account.email}}</p>
@@ -30,6 +29,6 @@
 
 
     <h1> This is an example of Client Credentials Requests </h1>
-    <button id="login-via-implicit-grant"> Get Song with id 557ecbf86a64fc1b8bed533f</button>
+    <button id="login-via-client-cred"> Get Song with id 557ecbf86a64fc1b8bed533f</button>
 
 </template>
