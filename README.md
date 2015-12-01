@@ -14,7 +14,7 @@ This an exmaple meteor project,[Get started with Meteor](https://www.meteor.com/
 
 ## Running the examples
 
-    $ cd meteor
+    $  meteor
 
 Then, open `http:/127.0.0.1:3000` in a browser.
 
