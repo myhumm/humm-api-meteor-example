@@ -25,6 +25,7 @@ Go to [My Applications on Humm Developer](http://accounts.livingindietv.com/apps
 
 For the examples, we registered these Redirect URIs:
 
-* 127.0.0.1:3000/complete-auth (used for implicit & auth code flow)
+* http://127.0.0.1:3000/complete-auth (used for implicit & auth code flow)
+* NOTE you must include "http://" in the redirect URI for this to work.
 
 Once you have created your app, replace the `client_id` and `client_secret` in the examples with the ones you get from My Applications.
